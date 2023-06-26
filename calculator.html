@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+<title>A Simple Calculator</title>
+<style>
+* {
+    margin: 9px;
+	padding: 9px;
+	}
+.wrap{
+     width:250px;
+	 margin:auto;
+	 height:auto;
+	 background:red;
+	 padding:15px;
+	 border-radius:50px;
+	 }
+input[type=text]{
+      width:80%;
+	  padding:10px;
+	  font-size:22px;
+	  font-weight:bold;
+	  }
+input[type=button]{
+            width:15%;
+			padding5px;
+			font-size22px;
+			font-weight:bold;
+			border-radius:100px;
+			}
+#del{
+width:80%;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="wrap"><h3>SIMPLE CALCULATOR</h3>
+<form name="cal">
+<input type="text" name="display">
+<br>
+<input type="button" value="7" onclick="cal.display.value+='7'">
+<input type="button" value="8" onclick="cal.display.value+='8'">
+<input type="button" value="9" onclick="cal.display.value+='9'">
+<input type="button" value="/" onclick="cal.display.value+='/'">
+<br>
+<input type="button" value="4" onclick="cal.display.value+='4'">
+<input type="button" value="5" onclick="cal.display.value+='5'">
+<input type="button" value="6" onclick="cal.display.value+='7'">
+<input type="button" value="*" onclick="cal.display.value+='*'">
+<br>
+<input type="button" value="1" onclick="cal.display.value+='1'">
+<input type="button" value="2" onclick="cal.display.value+='2'">
+<input type="button" value="3" onclick="cal.display.value+='3'">
+<input type="button" value="+" onclick="cal.display.value+='+'">
+<br>
+<input type="button" value="0" onclick="cal.display.value+='0'">
+<input type="button" value="." onclick="cal.display.value+='.'">
+<input type="button" value="-" onclick="cal.display.value+='-'">
+<input type="button" value="=" onclick="cal.display.value =eval(cal.display.value)">
+<br>
+<input type="button" value="DELETE" onclick="cal.display.value=''" id="del">
+
+
+
+</form>
+	
+</div>
+</body>
+</html>
